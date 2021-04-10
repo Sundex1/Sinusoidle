@@ -9,13 +9,11 @@ function f(x) {
 } 
 function fun1(x) {
   x = f(x)
-  let E = x;
-  return E.times(f(x)).sin().abs().plus(1).log10().times(E.times(f(x)).sin().sign)
+  return x.sin().abs().plus(1).log10().times(x.sin().sign)
 }
 function fun2(x) {
-  x = f(game.x)
-  let E = x;
-  return E.times(f(x)).sin().abs().plus(1).log10().times(E.times(f(x)).sin().sign)
+  x = game.x
+  return x.sin().abs().plus(1).log10().times(x.sin().sign)
 }
 
 function draw() {
