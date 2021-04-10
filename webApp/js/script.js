@@ -8,12 +8,12 @@ function f(x) {
   return D(x).add(game.x)
 } 
 function fun1(x) {
-  x = f(x)
+  x = f(x);
   let E = x;
   return E.times(f(x)).sin().abs().plus(1).log10().times(E.times(f(x)).sin().sign)
 }
 function fun2(x) {
-  x = f(game.x)
+  x = game.x
   let E = x;
   return E.times(f(x)).sin().abs().plus(1).log10().times(E.times(f(x)).sin().sign)
 }
@@ -31,7 +31,7 @@ function draw() {
 
  showAxes(ctx,axes);
  funGraph(ctx,axes,fun1,"rgb(11,153,11)",1); 
- funGraph(ctx,axes,fun2,"rgb(153,11,11)",1); 
+ //funGraph(ctx,axes,fun2,"rgb(153,11,11)",1); 
 }
 
 function funGraph (ctx,axes,func,color,thick) {
